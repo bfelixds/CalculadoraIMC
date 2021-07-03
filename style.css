@@ -6,19 +6,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
+.container-dad {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 182, 228);
 }
 
-.container-dad {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  
 .container {
   display: flex;
   justify-content: center;
@@ -29,7 +25,8 @@ html, body{
   height: 600px;
   padding: 2rem;
   align-items: center;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /*opacidade*/
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  /*opacidade*/
   border-radius: 20px;
   top: 100px;
 }
@@ -42,12 +39,38 @@ html, body{
   margin-bottom: 50px;
 }
 
-.input > label {
+.input>label {
   font-weight: bolder;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-.container > * {
+.container>* {
   padding: 20px;
 }
 
+#calcular:hover {
+  cursor: pointer;
+  background-color: rgb(116, 38, 116);
+}
 
+#calcular {
+  border-radius: 15px;
+  border: 0;
+  width: 220px;
+  margin-top: 50px;
+}
+
+.input {
+  display: flex;
+  flex-direction:inherit;
+  
+}
+
+input {
+  height: 28px;
+  width: 150px;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 15px;
+}
